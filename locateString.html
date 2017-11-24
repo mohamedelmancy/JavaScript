@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LocateString</title>
+</head>
+<body>
+<script type="text/javascript">
+	var mystring = "i'm in LOVE love with javascript ",
+	word = mystring.indexOf("love"),
+	word2 = mystring.indexOf("love" , 4);
+	console.log(word);
+	console.log(word2);
+	console.log(mystring.search("love"));// must small
+	console.log(mystring.search(/love/i));// regular expression >> i >> case insensitive
+</script>
+
+</body>
+</html>

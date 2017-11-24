@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events</title>
+
+</head>
+<body>
+<div id="test">This is Test</div>
+
+<p id="Paragraph">This Paragraph</p>
+
+<div id="Changes" style="width: 200px;border: 2px solid red">Changes In Events</div>
+<input type="text" id="inter" style="margin-top: 20px">
+<select id="currency">
+	<option value="20">Dollar</option>
+	<option value="30">YouRo</option>
+	<option value="6">Riyal</option>
+</select>
+<div id="result"></div>
+<input type="text" id="input" style="margin-top: 20px">
+<div id="res"></div>
+<script type="text/javascript">
+	window.onload=function()
+	{
+		document.getElementById("test").innerHTML="Hellow from javascript";
+
+	}
+	window.onclick=function()
+	{
+		document.getElementById("Paragraph").innerHTML="OoPs You Clicked the window Please :) Becaful";
+	}
+	 
+	window.ondblclick=function()
+	{
+		document.getElementById("test").innerHTML="OoPs You Clicked the window twice Please :) Becaful";
+	}
+	var mydiv =document.getElementById("Changes");
+	
+	mydiv.onmouseover=function()
+	{
+	mydiv.innerHTML="Hay You Hovered Me  ";
+	}
+	mydiv.onmouseout=function()
+	{
+		mydiv.innerHTML="Hay You Gone Of  Me ";
+	}
+	var  myInput = document.getElementById("inter");
+	var mycurrency=document.getElementById("currency");
+
+	mycurrency.onchange=function()
+	{
+		document.getElementById("result").innerHTML="Worth " + myInput.value * mycurrency.value + " EGP";
+	}
+	var  mynewinput = document.getElementById("input");
+	var  mynewdiv = document.getElementById("res");
+     mynewinput.onkeydown = function()
+     {
+     	mynewdiv.innerHTML = mynewinput.value * 10 + " By Keydown"; 
+     }
+       mynewinput.onkeypress = function()
+     {
+     	mynewdiv.innerHTML = mynewinput.value * 100 + " By Keypress"; 
+     }
+       mynewinput.onkeyup = function()
+     {
+     	mynewdiv.innerHTML = mynewinput.value * 1000 + " By keyup"; 
+     }
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date</title>
+</head>
+<body>
+<script type="text/javascript">
+	var mydate = new Date();
+	var mydate1 = new Date(10000);
+    var mydate2 = new Date("september 10  1994  12:25:10  ");// Full Formate and the clock and Day is option
+    var mydate3 = new Date("10 Sep 1994  12:25:10  ");// long formate
+    var mydate4 = new Date("10/9/1994");// short formate 
+    var mydate7 = new Date("1994/10/9");// short formate[ mounth day year ]
+    var mydate6 = new Date("25/10/1994");// short formate Invlide mounth must before day 
+    var mydate4 = new Date("10/9/1994");// short formate 
+    var mydate5 = new Date(1994 , 8 , 10 , 7 , 30 , 20);
+    var mydate8 = new Date("1994-9-10 10:20:50+05:00");// ISO fromate International Standarization Organization [YYYY-MM-DD hh:mm:ss TZD] TZD>time zone designator
+    console.log(mydate);
+    console.log(" Full Formate >> " + mydate1);
+    console.log(" long Formate >> " + mydate2);
+    console.log(" long Formate >> " + mydate3);
+    console.log(" short Formate >> " + mydate4);
+    console.log(mydate7);  
+    console.log(mydate6);
+    console.log(mydate5);
+    console.log( "ISO >> " + mydate8);
+    /////////////////////////////////////////////////////////////////////////////////////// date Functions Get() ////////////////////////////////
+    var the_date = new Date();
+    console.log("Day of The Date(in mounth) >> " + the_date.getDate());// get The day of the Mounth 1-31
+    console.log("Day of The Date(in Week) >> " + the_date.getDay());// get The day of the Week 0-6 >> sunday = 0 to staurday = 6
+    console.log("Day of The Date(Year) >> " + the_date.getFullYear());// get The Year 
+    console.log("Day of The Hours >> " + the_date.getHours());// get Hourdes 0-59
+    console.log("Day of The Minutes >> " + the_date.getMinutes());// get Minutes 0 -59
+    console.log("Day of The Seconds >> " + the_date.getSeconds());// get Seconds0 - 59
+    console.log("Day of The Milliseconds >> " + the_date.getMilliseconds());// get MilliSeconds 0-999
+    console.log("Day of The Time from 1970  >> " + the_date.getTime());// get time from 1970 untill now or the date you put it in new Date("Here")
+    console.log("Day of The getTimeZoneOffset(+2=2*60) >> " + the_date.getTimezoneOffset());// get difference between UTC & your Local time in minutes
+
+        /////////////// if we put UTC in any function of this will get UTC time not your time >>Ex:getUTCHours>> my hourse -2  ////////////////////////////////
+	console.log("Day of The Hours in UTC  >> " + the_date.getUTCHours());// get Hourdes 0-59
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	    /////////////////////////////////////////////////////////////////////////////////////// date Functions Set() ////////////////////////////////
+	    var the_date1 = new Date();
+					/* the_date1.setDate(19);
+					  the_date1.setFullYear(2014 , 5 , 4);
+					  the_date1.setHours(10);
+					  the_date1.setMinutes(10);
+					  the_date1.setSeconds(60);
+					  the_date1.setMilliseconds(60000);
+					  the_date1.setUTCHours(2);
+					  */
+                      the_date1.setMonth(2);
+
+    console.log("Set Day of The Date >> " + the_date1);// set The day of the Mounth 1-31
+  	    /////////////////////////////////////////////////////////////////////////////////////// now() ////////////////////////////////
+  	    var now = Date.now();// number of milliseconds from 1970 to now 
+  	    console.log(now);
+  	    /////////////////////////////////////////////////////////////////////////////////////// parse() ////////////////////////////////
+  	        var parse = Date.parse("9/25/2017");// number of milliseconds from 1970 to the date you put in it 
+  	    console.log(parse);
+  	    /////////////////////////////////////////////////////////////////////////////////////// .toISOString() ////////////////////////////////
+			   var ISO = new Date().toISOString();
+			  	    console.log("toISOString >> " + ISO);
+  	      	    /////////////////////////////////////////////////////////////////////////////////////// .toDteString()////////////////////////////////
+			var str = new Date().toDateString();
+			  	    console.log("toDateString >> " + str);
+		/////////////////////////////////////////////////////////////////////////////////////// .toTimeString()////////////////////////////////
+				var time = new Date().toTimeString();
+			  	    console.log("toTimeString >> " + time);
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String</title>
+</head>
+<body>
+<script type="text/javascript">
+	var mystring = "i LoVe javascript toO mUch and javascript is more funny JAVASCRIPT";
+	var string = "      hello from the other world     " ;
+	var string2 = "Google";
+	console.log(mystring.toLowerCase());
+	console.log(mystring.toUpperCase());
+	console.log("string after Using trim >> " + string.trim());
+ 	console.log("string2 after Using Link >> " + string2.link("https://www.google.com") );
+		console.log("my char is " + mystring.charAt(4));// v 
+			console.log("my char is " + mystring.charAt(-1)); // nothing
+			console.log("my char is " + mystring.charAt(mystring.length-1));
+			console.log("my char is " + mystring.charCodeAt(4));// UTF-8 of that character (unicode transformation form)
+			console.log("the string after using replace >> " + mystring.replace("javascript" , "php") );
+			console.log("the string after using replace and RE global flag >> " + mystring.replace(/javascript/g , "php") );//g >> global flag bdl kolo
+			console.log("the string after using replace and RE global flag >> " + mystring.replace(/javascript/gi , "php") );//g >> global flag bdl kolo
+			var mynumber = 120;
+			console.log(mynumber);
+			var temp = mynumber.toString().replace(2 , 3).split("");
+			console.log("The Number after converting to string >> " + temp );
+		 
+</script>
+
+</body>
+</html>

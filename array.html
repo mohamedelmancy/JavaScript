@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+
+</head>
+<body>
+<script type="text/javascript">
+	//////////////////////************** Constructor Way ***********************
+var friends = new Array() ;
+	friends[0]="mohamed";
+	friends[1]="ahmed";
+	friends[2]="noha";
+	friends[3]="soha";
+	
+console.log(friends);
+//////////////////////************** Literal Way ***********************
+var people=["Doaa" ,"Alaa" , "asmaa" , "noha" , "lma" , "aya" ,"do7a" , "farida"];
+console.log(people);
+console.log(people[1]);
+//////////////////////************** check if Array  ***********************
+	if(Array.isArray(friends))
+	{
+		console.log("Yes This is an Array");
+	}
+	else 
+	{
+		console.log("No This is Not an Array");
+	}
+/////////////////////////////////////////////////
+	if(friends.constructor===Array)
+	{
+		console.log("Yes Yes This is an Array");
+	}
+	else 
+	{
+		console.log("No No This is Not an Array");
+	}
+	//////////////////////**************Get length ***********************
+	console.log(friends.length);
+	//////////////////////**************Set length ***********************
+	friends.length=2;
+	console.log(friends)
+	//////////////////////************** Slice cutting ***********************
+	var sliced = people.slice(2 , 6);// 2 , 3 , 4 , 5
+	var sliced1 = people.slice(3); // 3 , 4 , 5 , 6 , 7 
+	var sliced2 = people.slice(-7 , -2);// -7 , -6 , -5 , -4 , -3 
+ 	console.log("sliced >> " + sliced);
+	console.log("sliced1 >> " + sliced1);
+	console.log("sliced2 >> " + sliced2);
+	//////////////////////************** Combine ( concat()) ***********************/////////////////
+	var work_friends = ["ashraf" , "omar" , "hassan" , "mona"];
+	var other_friends = ["mahmoud" , "samah" , "loubna" , "magi"];
+	var combined1 = people.concat(work_friends , other_friends);
+	console.log("combined1 Array >> " + combined1 );
+		//////////////////////************** push >> add at the end ***********************///////////////////////
+		 people.push("nada" , "ola");
+		console.log("Pushed >> " + people);
+		//////////////////////************** pop >> delete from the  the end ***********************///////////////////////
+		console.log(people);
+		console.log("who poped >> " + people.pop());
+
+		//////////////////////************** unshift >> add at the begining ***********************////////////
+			console.log(people);
+		 people.unshift("rodina" , "shimaa");
+		 console.log("unshifted >> " + people);
+		 	//////////////////////************** shift >> delete from the begining ***********************////////////////
+		 		console.log(people);
+		 people.shift();
+		 console.log("shifted >> " + people);
+		 		 	//////////////////////************** sort ASENDING***********************///////////////
+		 console.log(people);
+		 people.sort();
+		 console.log("Sorted >> " + people);
+		//////////////////////************** reverse DESENDING***********************////////////
+		 console.log(people);
+		 people.reverse();
+		 console.log("Reversed >> " + people);
+
+    //////////////////////************** splice(index , how many(delete) , "element1" ,"element2" ) delete and add at specific index ***********************
+		 		console.log("people >> " + people);
+		 		people.splice(2 , 3);
+		 			console.log("people spliced >> " + people);
+		 			///////////////////////////////////////////
+		 			console.log("people >> " + people);
+		 		people.splice(2 , 3 , "Ibrahim" , "islam");
+		 			console.log("people spliced2 >> " + people);
+		 				///////////////////////////////////////////
+		 			console.log("people >> " + people);
+		 		people.splice(2 , 0 , "hussien" , "hatem");
+		 			console.log("people spliced3 >> " + people);
+		 					//////////////////////************** toString() && toLocaleString()***********************///////////////////////////
+		 					console.log(people);
+		 					console.log("toString >> " + people.toString());
+		 					console.log("Array in toLocaleString in my device >> " + people.toLocaleString() );
+		 					//////////////
+		 					var mydate=new Date();
+		 					console.log("standard Time >> " + mydate);
+		 					console.log("Local time in my device >> " + mydate.toLocaleString() );
+
+		 		//////////////////////************** join()**********************************//////////////
+		 		console.log("using join >> " + people.join(" and "));
+
+		 		//////////////////////************** search for position (indexof) && (lastIndexof)**********************************//////////////
+		 		console.log(people);
+		 		console.log("indexof >> " + people.indexOf("islam"));
+		 		console.log("lastIndexof >> " + people.lastIndexOf("islam"));
+		 		////////////
+		 		console.log("indexof using an index >> " + people.indexOf("islam" , 2 ));
+		 		console.log("lastIndexof using an index >> " + people.lastIndexOf("shimaa" , 2));
+</script>
+</body>
+</html>

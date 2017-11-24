@@ -1,0 +1,12 @@
+p
+{
+    width: 200px;
+    background: red;
+    color: aqua;
+    font-weight: bold;
+    display: inline-block;
+}
+span
+{
+    border: 2px solid #333;
+}

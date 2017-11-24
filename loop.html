@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loop</title>
+</head>
+<body>
+<script type="text/javascript">
+	/*jslint plusplus:true evil:true*/
+var car = {
+	color :"red",
+	type : "mercides",
+	price : "30000 EGP",
+	model : "2015"
+};
+var arr = ["mohamed" , "noha" , "mona" , "ahmed" , "ola"];
+
+for( var temp in car )
+{
+	if (car.hasOwnProperty(temp)) // optional 
+	{
+	console.log(" for to object >> " + temp +" is " + car[temp]);
+	}
+}
+
+ for (var i = 0; i < arr.length; i++) {
+ 	if (arr[i]=="ahmed") continue;
+ 	console.log("for to array >> " + arr[i]);
+ }
+ ////////////////////////////////////////////////////// Identical to ////////////////////////////////////
+ var j =0;
+ for (;;) {
+ 	if (j>=arr.length) break;
+ 		console.log("advanced for to array >> " + arr[j]);
+ 		j++;
+ 	
+ }
+
+//////////////////////////////////////////////////////////////////////// select /////////////////////////////////////////////
+
+          function  generateYears1(start , end)
+          {
+          	document.write("<select>");
+
+          	for (var years = start ; years <= end ; years++) 
+          	{
+               //	document.write("<option value=\" " + years + "\">" + years + "</option>");
+               	document.write("<option value='" + years + "'>" + years + "</option>");// el fkra eny a7wl elly 2blha w elly b3dha l string lw7do  
+          	}
+
+          	document.write("</select>");
+          } 
+          ////////////////////////////////////////////////////////////////////while loop//////////////////////////////////////////////
+           function  generateYears2(start , end)
+          {
+          	document.write("<select>");
+          	var years = start;
+          	while ( years <= end  ) 
+          	{
+               //	document.write("<option value=\" " + years + "\">" + years + "</option>");
+               	document.write("<option value='" + years + "'>" + years + "</option>");// el fkra eny a7wl elly 2blha w elly b3dha l string lw7do  
+               	years++;
+          	}
+
+          	document.write("</select>");
+          } 
+                    //////////////////////////////////////////////////////////////////// do while loop//////////////////////////////////////////////
+                      function  generateYears3(start , end)
+          {
+          	document.write("<select>");
+          	var years = start;
+          	
+           do {
+               //	document.write("<option value=\" " + years + "\">" + years + "</option>");
+               	document.write("<option value='" + years + "'>" + years + "</option>");// el fkra eny a7wl elly 2blha w elly b3dha l string lw7do  
+               	years++;
+          	}while ( years <= end  ) ;
+
+          	document.write("</select>");
+          } 
+          generateYears1(1900 , 2017);
+          generateYears2(1900 , 2017);
+          generateYears3(1900 , 2017);
+      //////////////////////////////////////////////////////////////////// label and continue //////////////////////////////////////////////
+      MainLoop:
+      for (var l = 1; l <= 10; l ++)
+       {
+       		ChildLoop:
+       		for (var k = 15; k <= 20; k++)
+       		 {			       		
+					 	if (k==18) continue;
+					 	if (k==19) break ChildLoop;
+					 	console.log("for Using label  >> " + l + "->" +  k);
+ 	          }
+ }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expression </title>
+</head>
+<body>
+<script type="text/javascript">
+var mystring  = " I 1 Love 2 3 ElE 4 zero 5 2 web 6 7  school 8 9 10";
+var mybnewstring = "AB XYZ abc hij";
+var temp = "1234567890ABCDEFGHIJKabcdefghijk";
+var temp2 ="I love ElZeeero weEEeeeb school";
+/*console.log("the result using >>" + mystring.replace(/l/ , "@"));// will work on the second l which is small 
+console.log("the result using case insensitive >>" + mystring.replace(/l/i , "@"));// will work on the first l 
+console.log("the result using I and G>>" + mystring.replace(/l/ig , "@"));// will work on the all l*/
+/////////////////////////////////////////////////*********************************************************************//////////////////////////////
+// i case insensitive >> do for only first  capital or  small charatcter                                                                                           
+/////////////////////  g do for all the characters what you decided it small or capital                                                                                              //////////////////////////////
+/////////////////////                                                                                                 //////////////////////////////
+/////////////////////////////////////////////////********************************************************************///////////////////////////////
+//console.log("the result using I , G and []>>" + mystring.replace(/[e]/ig , "@"));//every e repalce it with @ 
+//console.log("the result using I , G , [] and ^ >>" + mystring.replace(/[^e]/ig , "@"));// every character execpt e replace it with @ ^ = (not)
+/*console.log("the result using I , G and []>>" + mystring.replace(/[a-e]/ig , "@"));// [ a - e ]  all capital and small range from a to e >> [a,b,c,d,e]
+console.log("the result using I , G and []>>" + mystring.replace(/[A-E]/i , "@"));//work on first small or capital range A to E >> awl wa7da w 5las if small or cap
+console.log("the result using I , G and []>>" + mystring.replace(/[A-E]/g , "@"));//work on all capital only
+console.log("the result using I , G and []>>" + mystring.replace(/[a-e]/g , "@"));// work for all small only
+console.log("the result using I , G and []>>" + mystring.replace(/[A-E]/gi , "@"));//work on all capital and small
+console.log("the result using I , G and []>>" + mystring.replace(/[a-e]/g , "@"));//work on all small only
+console.log("the result using I , G and []>>" + mystring.replace(/[0-9]/g , "&"));//work on all range
+console.log("the result using I , G and []>>" + mystring.replace(/[0-9]/gi , "&"));//work on all range
+console.log("the result using I , G and []>>" + mystring.replace(/[0-9]/gi , "*"));//work on all range
+console.log("the result using I , G and []>>" + mybnewstring.replace(/[A-g]/g , "@"));//55555555555lay balak mn dodo >work on all capital rangeconsole.log("the result using I , G and []>>" + temp.replace(/[0-9a-z]/g , "@"));//replace all execpt capital character
+console.log("the result using I , G and []>>" + temp.replace(/[0-9A-Z]/g , "@"));//replace all execpt small character*/
+		////////////////////////////////////////////////////////////////////////////////////////////////////////Quantifiers//////////////
+console.log("the result using I , G and Quantifiers >>" + temp2.replace(/e/gi , "@"));// every e small or capital
+console.log("the result using I , G and Quantifiers >>" + temp2.replace(/e+/gi , "@"));// every e small or capital if more than e behinded replace with one @
+console.log("the result using I , G and Quantifiers >>" + temp2.replace(/e{2}/gi , "@"));//replace every 2 e with @ if odd leave one without replace (s or c)
+console.log("the result using I , G and Quantifiers >>" + temp2.replace(/e{1}/gi , "@"));// replace every one e with one @ (s or c)
+console.log("the result using I , G and Quantifiers >>" + temp2.replace(/e{3}/gi , "@"));// replace every odd number>3 with one @>>if odd leave one with out replace
+console.log("the result using I , G and Quantifiers >>" + temp2.replace(/e{1,2}/gi , "@"));// replace every 1 and 2 e with one @
+console.log("the result using I , G and Quantifiers >>" + temp2.replace(/e{2,}/gi , "@"));// replace at least 2 >> mean > 2                   */
+
+
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Self invoke</title>
+</head>
+<body>
+<script type="text/javascript">
+	(function saysomething()
+	{
+		console.log("say some Thing");
+	})();
+
+	function calaculator(number)
+	{
+        return number * 10;
+	}
+	var temp = calaculator();
+	if (isNaN(temp)) {
+    console.log("Please inter correct number");
+    console.log(temp);
+
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Practice</title>
+</head>
+<body>
+<script type="text/javascript">
+	var mystring = 120, 
+		newstring =mystring.toString(),
+		newstring2 =String(mystring);
+		console.log("the number is "+mystring+ " the string using toString() is " + newstring +" using String() is " + newstring2);
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    var temp = "i love javascript and jQuery";
+    var temp2 = temp.split();//be7ol el string to array 
+  console.log("string after split0 >>" + temp + " " +  typeof(temp)); // htla2y no3o string
+   console.log("string after split0 >>" + temp2 + " " + typeof(temp2)); //  htla2y el no3 object
+    console.log("string after split >>" + temp.split(""));// 70t comma b3d kol 3onsor  
+     console.log("string after split2 >>" + temp.split(" "));// 7ot comma mkan kol space 
+      console.log("string after split3 >>" + temp.split("j"));// 7ot comma mkan kol j 
+       console.log("string after split4 >>" + temp.split("" , 3));// 7ot comma with limit 3 y3ny tl3 3 3naser bs  behm comma w mttl3sh 3naser tany  
+       ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+         console.log("string after slice2 >>" + temp.slice(6));//ebd2 mn 6 ll a5er 
+         console.log("string after slice >>" + temp.slice(3, 6));//ebd2 mn 3 l7d index 6
+          console.log("string after slice2 >>" + temp.slice(-6));// hat a5er 6 7rof
+          ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+          console.log("string after substr >>" + temp.substr(2 , 10));// ebd2 mn 2 w 3d 10 7rof  
+             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+           console.log("string after substring >>" + temp.substring(10 , 2)); //ebd2 mn index (2) l 7d index(10) like slice but it can make swap
+           console.log("string after slice >>" + temp.slice(10 , 2)); // will not work as it doesno't make swap 
+
+</script>
+
+</body>
+</html>

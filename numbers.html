@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Numbers</title>
+</head>
+<body>
+<script type="text/javascript">
+	var number1=80;
+	var number2=800;
+	var number3=8000;
+	console.log("toExponential(8 * 10 ) >> " + number1.toExponential()) ;
+	console.log("toExponential(8 * 100) >> " + number2.toExponential()) ;
+	console.log("toExponential(8 * 100 ) >> " + number3.toExponential()) ;
+	var num1 = 99.566624;
+	/////////////////////////////////////////////////////////////////////////////////////////////
+	console.log("toFixed >> " + num1.toFixed(0));//rg3holy without 3lama 3ashria
+	console.log("toFixed >> " + num1.toFixed(1));//rg3holy with one 3lama 3ashria
+	console.log("toFixed >> " + num1.toFixed(2));//rg3holy with two 3lama 3ashria
+	////////////////////////////////////////////////////////////////////////////////////////////
+	var num2 = 99.32244;
+	console.log("toFixed >> " + num2.toFixed(0));//rg3holy without 3lama 3ashria
+	console.log("toFixed >> " + num2.toFixed(1));//rg3holy with one 3lama 3ashria
+	///////////////////////////////////////////////////////////////////////////////////////////////
+	var num3 = 99.36244;
+	console.log("toFixed >> " + num3.toFixed(0));//rg3holy without 3lama 3ashria
+	console.log("toFixed >> " + num3.toFixed(1));//rg3holy with one 3lama 3ashria >> 99.4
+	console.log("toFixed >> " + num3.toFixed(2));//rg3holy with two 3lama 3ashria >> 99.36 
+		///////////////////////////////////////////////////////////////////////////////////////////////
+	var num4 = 99.363844;
+	console.log("toFixed >> " + num4.toFixed(0));//rg3holy without 3lama 3ashria
+	console.log("toFixed >> " + num4.toFixed(1));//rg3holy with one 3lama 3ashria >> 99.4
+	console.log("toFixed >> " + num4.toFixed(2));//rg3holy with two 3lama 3ashria >> 99.36 
+	console.log("toFixed >> " + num4.toFixed(3));//rg3holy with two 3lama 3ashria >> 99.364
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////parseInt()////////////////////////////////////
+	var str = "100px";
+	var str1 = "80 year";
+	var str2 = "year 80";
+	var str3 = "80 hello from Egypt";
+	var str4 = "80";
+	console.log("parseInt () >> " + parseInt(str));// >> 100 
+	console.log("parseInt () >> " + parseInt(str1));// >> 80
+	console.log("parseInt () >> " + parseInt(str2));// >> NaN lazem ybd2 b number 
+	console.log("parseInt () >> " + parseInt(str3));// 80
+    console.log("with out parseInt " + (str4 / 10));// 80 as  str4 = "80"
+    console.log("with out parseInt " + (str1 / 10));// NaN as str1 = "80 year"
+    console.log("Using parseInt " + ( parseInt(str1) / 10));// NaN as str1 = "80 year"
+
+
+
+
+
+</script>
+
+</body>
+</html>
